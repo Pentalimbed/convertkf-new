@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Compiler/MSVC-C.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Compiler/MSVC-CXX.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-C.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake
+D:/Program Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake
+E:/dev/projects/convertkf-new/CMakeLists.txt
+E:/dev/projects/convertkf-new/build/CMakeFiles/3.23.0-rc2/CMakeCCompiler.cmake
+E:/dev/projects/convertkf-new/build/CMakeFiles/3.23.0-rc2/CMakeCXXCompiler.cmake
+E:/dev/projects/convertkf-new/build/CMakeFiles/3.23.0-rc2/CMakeRCCompiler.cmake
+E:/dev/projects/convertkf-new/build/CMakeFiles/3.23.0-rc2/CMakeSystem.cmake

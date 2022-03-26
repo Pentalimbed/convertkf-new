@@ -1,0 +1,318 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "MinSizeRel/convertkf.exe"
+		},
+		{
+			"path" : "MinSizeRel/convertkf.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_directories",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "_UNICODE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "E:/dev/libs/cpp/hk2014_1_0_r1/Source"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/dev/libs/cpp/niflib/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "convertkf::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:X86 /INCREMENTAL:NO /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\ImGui.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkBase.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkCompat.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkGeometryUtilities.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkImageUtilities.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkInternal.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkSceneData.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkSerialize.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkVisualize.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkaAnimation.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkaInternal.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkaPhysics2012Bridge.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkcdCollide.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkcdInternal.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgBridge.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgCommon.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgDx11.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgDx9s.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgOglES.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgOglES2.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgOgls.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgSoundCommon.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkgSoundXAudio2.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkpCollide.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkpConstraint.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkpConstraintSolver.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkpDynamics.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkpInternal.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkpUtilities.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\hk2014_1_0_r1\\Lib\\win32_vs2012_win7\\release\\hkpVehicle.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\dev\\libs\\cpp\\niflib\\lib\\niflib_static.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "convertkf",
+	"nameOnDisk" : "convertkf.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "impl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
