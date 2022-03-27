@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <unordered_map>
+#include <map>
 
 #pragma region Niflib Headers
 //////////////////////////////////////////////////////////////////////////
@@ -316,7 +316,14 @@ void exportController(NiControllerSequenceRef       seq,
 
     hkArray<hkQsTransform>& transforms = tempAnim->m_transforms;
 
-    std::unordered_map<std::string, int> boneMap;
+    struct comp
+    {
+        bool operator()(const std::string& lhs, const std::string& rhs) const
+        {
+            return stricmp(lhs.c_str(), rhs.c_str()) < 0;
+        }
+    }; // case insensitive
+    std::map<std::string, int, comp> boneMap;
     for (int i = 0; i < nbones; ++i)
     {
         string name   = skeleton->m_bones[i].m_name;
@@ -424,7 +431,7 @@ void exportController(NiControllerSequenceRef       seq,
         // tparams.m_rotationQuantizationType = hkaSplineCompressedAnimation::TrackCompressionParams::THREECOMP40;
 
         // hkRefPtr<hkaSplineCompressedAnimation> outAnim = new hkaSplineCompressedAnimation(*tempAnim.val(), tparams, aparams);
-        binding->m_animation            = tempAnim; // Uncompressed
+        binding->m_animation            = tempAnim;
         binding->m_originalSkeletonName = skeleton->m_bones[0].m_name;
     }
 }
