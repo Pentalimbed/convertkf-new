@@ -1,5 +1,7 @@
 #include "headers.h"
 
+#define COMPRESSED
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -79,7 +81,6 @@ using namespace Niflib;
 #include <Animation/Animation/Animation/Util/hkaAdditiveAnimationUtility.h>
 #include <Animation/Animation/Playback/hkaAnimatedSkeleton.h>
 
-#include <Common/Serialize/Serialize/StructuredBinaryStream/hkStructuredBinaryStream.h>
 #include <Common/Serialize/Util/hkLoader.h>
 #include <Common/Serialize/Util/hkRootLevelContainer.h>
 #include <Common/Compat/Deprecated/Packfile/Xml/hkXmlPackfileWriter.h>
@@ -424,14 +425,19 @@ void exportController(NiControllerSequenceRef       seq,
 
     // create the animation with default settings
     {
-        // hkaSplineCompressedAnimation::TrackCompressionParams     tparams;
-        // hkaSplineCompressedAnimation::AnimationCompressionParams aparams;
+#ifdef COMPRESSED
+        hkaSplineCompressedAnimation::TrackCompressionParams     tparams;
+        hkaSplineCompressedAnimation::AnimationCompressionParams aparams;
 
-        // tparams.m_rotationTolerance        = 0.001f;
-        // tparams.m_rotationQuantizationType = hkaSplineCompressedAnimation::TrackCompressionParams::THREECOMP40;
+        tparams.m_rotationTolerance        = 0.001f;
+        tparams.m_rotationQuantizationType = hkaSplineCompressedAnimation::TrackCompressionParams::THREECOMP40;
 
-        // hkRefPtr<hkaSplineCompressedAnimation> outAnim = new hkaSplineCompressedAnimation(*tempAnim.val(), tparams, aparams);
-        binding->m_animation            = tempAnim;
+        hkRefPtr<hkaSplineCompressedAnimation> outAnim = new hkaSplineCompressedAnimation(*tempAnim.val(), tparams, aparams);
+
+        binding->m_animation = outAnim;
+#else
+        binding->m_animation = tempAnim;
+#endif
         binding->m_originalSkeletonName = skeleton->m_bones[0].m_name;
     }
 }
